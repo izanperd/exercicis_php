@@ -28,6 +28,7 @@ const tienda = "Tienda online";
             <p class="descripcio">Producto 1</p>
             <p class="preu">Preu sense IVA: <?= producto ?> EUR</p>
             <p class="preu">IVA (<?= IVA ?>%)</p>
+            <!-- <?php const IVA = 1; ?> Warning: Constant IVA already defined in C:\wamp64\www\M0613\clase\exercicis_php\ex06\index.php on line 32 -->
             <p class="total">TOTAL: <?= round(producto + ((producto / 100 ) * IVA), 2) ?> EUR</p>
             <p class="estoc">Unitats disponibles: 5</p>
             <p class="ref"><?= id ?></p>
@@ -48,4 +49,5 @@ Substitueix cada valor del HTML per < ?=?> i fes que l'IVA i el total es calculi
 Defineix les constants IVA, BOTIGA, MONEDA i DESCOMPTE_SOCI amb define() o const
 Substitueix al teu index.php tots els valors fixos per les contants
 Intenta canviar el valor d'una constant pagina i anota l'error que dona
+Busca com fer-ho amb number_format per modificar com es veu el preu
 -->
