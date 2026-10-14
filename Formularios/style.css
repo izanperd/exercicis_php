@@ -1,0 +1,124 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:
+        radial-gradient(ellipse at top left, #6424a8 0%, transparent 45%),
+        radial-gradient(ellipse at bottom right, #b51768 0%, transparent 40%),
+        #0b0715;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+/* TITULO */
+h1 {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    max-width: 900px;
+    margin-bottom: 50px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #ff73d2,
+        #a78bfa,
+        #ffffff
+    );
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation: brillo 5s linear infinite;
+}
+
+/* FORMULARIO */
+form {
+    width: 100%;
+    max-width: 480px;
+    padding: 45px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 25px;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.45),
+        0 0 35px rgba(192, 38, 211, 0.12);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    animation: aparecer 0.9s ease-out;
+}
+
+/* CAMPOS DE TEXTO */
+input,
+select {
+    width: 100%;
+    padding: 17px 18px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+
+    background: rgba(10, 5, 25, 0.75);
+    border: 1px solid #49345f;
+    border-radius: 12px;
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+/* TEXTO DEL SELECT */
+select option {
+    background: #160e27;
+    color: white;
+}
+
+/* EFECTO AL SELECCIONAR UN CAMPO */
+input:focus,
+select:focus {
+    border-color: #f472d0;
+    box-shadow: 0 0 18px rgba(244, 114, 208, 0.3);
+    transform: translateY(-2px);
+}
+
+/* BOTON */
+button {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 17px 22px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(100deg, #9333ea, #ec4899);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(217, 70, 239, 0.3);
+}

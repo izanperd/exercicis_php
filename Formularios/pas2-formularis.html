@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAS 2 - Formulari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inscripcion al festival</h1>
+
+    <!-- action: on van les dades -->
+    <!-- method: com hi van (GET o POST) -->
+    <form action="pas2-formularis.php" method="post">
+        <label for="name"></label>
+        <input name="nom" id="nom">
+
+        <label for="correu"></label>
+        <input name="correu" id="correu" type="email">
+
+        <label for="dia"></label>
+        <select name="dia" id="dia">
+            <option value="divendres">Divendres</option>
+            <option value="dissabte">Dissabte</option>
+        </select>
+
+        <button>Inscriure'm</button>
+    </form>
+</body>
+</html>
